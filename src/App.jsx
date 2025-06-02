@@ -2,11 +2,23 @@ import Menu from "./components/Menu"
 
 
 function App() {
+
+  // Evento Independiente y reutilizable:
+  const greetConsole = () => {
+    console.log('Saludo desde la consola');
+  }
+
   return (
     <div>
-      <h1>Inicio del proyecto</h1>
+      <h1 onClick={greetConsole} >Inicio del proyecto</h1>
+      
       <Menu/>
-      <h2>Etiqueta Jsx</h2>
+
+      {/* Evento de uso local: */}
+      <h2 onClick={() => {
+        alert("Saludo desde el alert de Js")
+      }} 
+      >Saludo de un Alert</h2>
     </div>
 
   )
