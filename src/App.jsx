@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Menu from "./components/Menu"
 
 
@@ -8,10 +9,20 @@ function App() {
     console.log('Saludo desde la consola');
   }
 
+  // useState:
+  const [number, setNumber] = useState(0);
+
+  // Funcion para aumentar el valor de number:
+  const addOne = () => {
+    setNumber(number + 1);
+    console.log(number); // Vemos los cambios por consola
+  }
+
+
   return (
     <div>
       <h1 onClick={greetConsole} >Inicio del proyecto</h1>
-      
+
       <Menu/>
 
       {/* Evento de uso local: */}
@@ -19,8 +30,15 @@ function App() {
         alert("Saludo desde el alert de Js")
       }} 
       >Saludo de un Alert</h2>
-    </div>
 
+      {/* Uso del useState: */}
+      <h3>Numero: {number}</h3>
+      <button onClick={addOne}>
+        Aumentar el numero
+      </button>
+
+
+    </div>
   )
 }
 
