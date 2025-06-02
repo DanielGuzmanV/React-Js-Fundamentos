@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Menu from "./components/Menu"
 import AtributoReactivo from "./components/AtributoReactivo";
+import Renderizado from "./components/Renderizado";
 
 
 function App() {
@@ -39,8 +40,10 @@ function App() {
       </button>
 
       <hr/>
-
       <AtributoReactivo/>
+
+      <hr/>
+      <Renderizado/>
 
     </div>
   )
