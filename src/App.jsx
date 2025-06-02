@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Menu from "./components/Menu"
+import AtributoReactivo from "./components/AtributoReactivo";
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
         Aumentar el numero
       </button>
 
+      <hr/>
+
+      <AtributoReactivo/>
 
     </div>
   )
