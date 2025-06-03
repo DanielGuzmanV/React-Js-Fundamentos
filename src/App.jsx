@@ -3,6 +3,7 @@ import Menu from "./components/Menu"
 import AtributoReactivo from "./components/AtributoReactivo";
 import Renderizado from "./components/Renderizado";
 import Listas from "./components/Listas";
+import PropsComponent from "./components/PropsComponent";
 
 
 function App() {
@@ -21,6 +22,13 @@ function App() {
     console.log(number); // Vemos los cambios por consola
   }
 
+  // Uso de props:
+  const textValue = 'Mensaje desde el componente padre';
+  const objPerson = {
+    name: 'Marco',
+    lastname: 'Antonio',
+    age: 34,
+  };
 
   return (
     <div>
@@ -48,6 +56,10 @@ function App() {
 
       <hr/>
       <Listas/>
+
+      <hr/>
+      <PropsComponent message={textValue} datePerson={objPerson}>
+      </PropsComponent>
       
     </div>
   )
