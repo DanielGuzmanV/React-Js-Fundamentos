@@ -3,8 +3,9 @@ import Menu from "./components/Menu"
 import AtributoReactivo from "./components/AtributoReactivo";
 import Renderizado from "./components/Renderizado";
 import Listas from "./components/Listas";
-import PropsComponent from "./components/PropsComponent";
+import PropsPadrehijo from "./components/PropsPadrehijo";
 import ClassComponent from "./components/ClassComponent";
+import PropsHijopadre from "./components/PropsHijopadre";
 
 
 function App() {
@@ -23,13 +24,21 @@ function App() {
     console.log(number); // Vemos los cambios por consola
   }
 
-  // Uso de props:
+  // Uso de props padre a hijo:
   const textValue = 'Mensaje desde el componente padre';
   const objPerson = {
     name: 'Marco',
     lastname: 'Antonio',
     age: 34,
   };
+
+  // Uso de props hijo a padre:
+  const [displayName, setDisplayName] = useState("");
+
+  const login = (valueName) => {
+    setDisplayName(valueName);
+  }
+
 
   return (
     <div>
@@ -59,11 +68,17 @@ function App() {
       <Listas/>
 
       <hr/>
-      <PropsComponent message={textValue} datePerson={objPerson}>
-      </PropsComponent>
+      <PropsPadrehijo message={textValue} datePerson={objPerson}>
+      </PropsPadrehijo>
 
       <hr/>
       <ClassComponent/>
+
+      <hr/>
+      <h2> Props | Comunicacion hijo-padre</h2>
+      <h3>Hola {displayName}</h3>
+      <PropsHijopadre handleLogin={login}>
+      </PropsHijopadre>
       
     </div>
   )
