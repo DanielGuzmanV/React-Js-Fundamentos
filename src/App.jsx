@@ -4,6 +4,7 @@ import AtributoReactivo from "./components/AtributoReactivo";
 import Renderizado from "./components/Renderizado";
 import Listas from "./components/Listas";
 import PropsComponent from "./components/PropsComponent";
+import ClassComponent from "./components/ClassComponent";
 
 
 function App() {
@@ -60,6 +61,9 @@ function App() {
       <hr/>
       <PropsComponent message={textValue} datePerson={objPerson}>
       </PropsComponent>
+
+      <hr/>
+      <ClassComponent/>
       
     </div>
   )
