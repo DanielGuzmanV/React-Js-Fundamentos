@@ -2,6 +2,7 @@ import { useState } from "react";
 import Menu from "./components/Menu"
 import AtributoReactivo from "./components/AtributoReactivo";
 import Renderizado from "./components/Renderizado";
+import Listas from "./components/Listas";
 
 
 function App() {
@@ -45,6 +46,9 @@ function App() {
       <hr/>
       <Renderizado/>
 
+      <hr/>
+      <Listas/>
+      
     </div>
   )
 }
