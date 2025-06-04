@@ -7,6 +7,7 @@ import PropsPadrehijo from "./components/PropsPadrehijo";
 import ClassComponent from "./components/ClassComponent";
 import PropsHijopadre from "./components/PropsHijopadre";
 import PageStateUp from "./pages/PageStateUp";
+import PageUseEffect from "./pages/PageUseEffect";
 
 
 function App() {
@@ -83,6 +84,9 @@ function App() {
 
       <hr/>
       <PageStateUp/>
+
+      <hr/>
+      <PageUseEffect/>
 
       
     </div>
