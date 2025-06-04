@@ -8,6 +8,7 @@ import ClassComponent from "./components/ClassComponent";
 import PropsHijopadre from "./components/PropsHijopadre";
 import PageStateUp from "./pages/PageStateUp";
 import PageUseEffect from "./pages/PageUseEffect";
+import PageMenu from "./pages/PageMenu";
 
 
 function App() {
@@ -15,15 +16,6 @@ function App() {
   // Evento Independiente y reutilizable:
   const greetConsole = () => {
     console.log('Saludo desde la consola');
-  }
-
-  // useState:
-  const [number, setNumber] = useState(0);
-
-  // Funcion para aumentar el valor de number:
-  const addOne = () => {
-    setNumber(number + 1);
-    console.log(number); // Vemos los cambios por consola
   }
 
   // Uso de props padre a hijo:
@@ -46,19 +38,7 @@ function App() {
     <div>
       <h1 onClick={greetConsole} >Inicio del proyecto</h1>
 
-      <Menu/>
-
-      {/* Evento de uso local: */}
-      <h2 onClick={() => {
-        alert("Saludo desde el alert de Js")
-      }} 
-      >Saludo de un Alert</h2>
-
-      {/* Uso del useState: */}
-      <h3>Numero: {number}</h3>
-      <button onClick={addOne}>
-        Aumentar el numero
-      </button>
+      <PageMenu/>
 
       <hr/>
       <AtributoReactivo/>
