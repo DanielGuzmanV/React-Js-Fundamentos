@@ -2,8 +2,8 @@
 function PropsComponent(props) {
 
   // Tambien podemos usar destructuring y ya no pondremos:
-  // props.message, props.datePerson.name, etc
-  const {message, datePerson} = props
+  // props.message, props.objectPerson.name, etc
+  const {message, messageObject,objectPerson} = props
 
   return (
     <>
@@ -15,14 +15,15 @@ function PropsComponent(props) {
       </p>
 
       <div>
+        <p>{messageObject}</p>
         <p>
-          <b>Nombre: </b>{datePerson.name}
+          <b>Nombre: </b>{objectPerson.name}
         </p>
         <p>
-          <b>Apellido: </b>{datePerson.lastname}
+          <b>Apellido: </b>{objectPerson.lastname}
         </p>
         <p>
-          <b>Edad: </b>{datePerson.age}
+          <b>Edad: </b>{objectPerson.age}
         </p>
 
       </div>

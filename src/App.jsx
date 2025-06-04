@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Menu from "./components/Menu"
 import AtributoReactivo from "./components/AtributoReactivo";
 import Renderizado from "./components/Renderizado";
 import Listas from "./components/Listas";
@@ -9,6 +8,7 @@ import PropsHijopadre from "./components/PropsHijopadre";
 import PageStateUp from "./pages/PageStateUp";
 import PageUseEffect from "./pages/PageUseEffect";
 import PageMenu from "./pages/PageMenu";
+import PagePropsPadrehijo from "./pages/PagePropsPadrehijo";
 
 
 function App() {
@@ -17,14 +17,6 @@ function App() {
   const greetConsole = () => {
     console.log('Saludo desde la consola');
   }
-
-  // Uso de props padre a hijo:
-  const textValue = 'Mensaje desde el componente padre';
-  const objPerson = {
-    name: 'Marco',
-    lastname: 'Antonio',
-    age: 34,
-  };
 
   // Uso de props hijo a padre:
   const [displayName, setDisplayName] = useState("");
@@ -50,8 +42,7 @@ function App() {
       <Listas/>
 
       <hr/>
-      <PropsPadrehijo message={textValue} datePerson={objPerson}>
-      </PropsPadrehijo>
+      <PagePropsPadrehijo/>
 
       <hr/>
       <ClassComponent/>
