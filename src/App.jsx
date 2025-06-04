@@ -6,6 +6,7 @@ import Listas from "./components/Listas";
 import PropsPadrehijo from "./components/PropsPadrehijo";
 import ClassComponent from "./components/ClassComponent";
 import PropsHijopadre from "./components/PropsHijopadre";
+import PageStateUp from "./pages/PageStateUp";
 
 
 function App() {
@@ -79,6 +80,10 @@ function App() {
       <h3>Hola {displayName}</h3>
       <PropsHijopadre handleLogin={login}>
       </PropsHijopadre>
+
+      <hr/>
+      <PageStateUp/>
+
       
     </div>
   )
