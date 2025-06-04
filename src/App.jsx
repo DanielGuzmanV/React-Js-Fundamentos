@@ -9,6 +9,7 @@ import PageStateUp from "./pages/PageStateUp";
 import PageUseEffect from "./pages/PageUseEffect";
 import PageMenu from "./pages/PageMenu";
 import PagePropsPadrehijo from "./pages/PagePropsPadrehijo";
+import PagePropsHijoPadre from "./pages/PagePropsHijoPadre";
 
 
 function App() {
@@ -17,14 +18,6 @@ function App() {
   const greetConsole = () => {
     console.log('Saludo desde la consola');
   }
-
-  // Uso de props hijo a padre:
-  const [displayName, setDisplayName] = useState("");
-
-  const login = (valueName) => {
-    setDisplayName(valueName);
-  }
-
 
   return (
     <div>
@@ -48,10 +41,7 @@ function App() {
       <ClassComponent/>
 
       <hr/>
-      <h2> Props | Comunicacion hijo-padre</h2>
-      <h3>Hola {displayName}</h3>
-      <PropsHijopadre handleLogin={login}>
-      </PropsHijopadre>
+      <PagePropsHijoPadre/>
 
       <hr/>
       <PageStateUp/>
