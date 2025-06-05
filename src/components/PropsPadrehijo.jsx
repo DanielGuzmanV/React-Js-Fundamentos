@@ -1,13 +1,13 @@
 
-function PropsComponent(props) {
+function PropsPadrehijo(props) {
 
   // Tambien podemos usar destructuring y ya no pondremos:
   // props.message, props.objectPerson.name, etc
-  const {message, messageObject,objectPerson} = props
+  const {message, messageObject,objPerson} = props
 
   return (
     <>
-      <h2>Uso de los props</h2>
+      <h2>Uso de los props | Padre a hijo</h2>
       <p>Este es el componente hijo</p>
 
       <p>
@@ -17,13 +17,13 @@ function PropsComponent(props) {
       <div>
         <p>{messageObject}</p>
         <p>
-          <b>Nombre: </b>{objectPerson.name}
+          <b>Nombre: </b>{objPerson.name}
         </p>
         <p>
-          <b>Apellido: </b>{objectPerson.lastname}
+          <b>Apellido: </b>{objPerson.lastname}
         </p>
         <p>
-          <b>Edad: </b>{objectPerson.age}
+          <b>Edad: </b>{objPerson.age}
         </p>
 
       </div>
@@ -31,7 +31,7 @@ function PropsComponent(props) {
   )
 }
 
-export default PropsComponent
+export default PropsPadrehijo
 
 
 

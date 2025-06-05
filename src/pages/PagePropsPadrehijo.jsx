@@ -1,4 +1,4 @@
-import PropsPadrehijo from "../components/PropsPadrehijo"
+import PropsPadrehijo from "../components/PropsPadrehijo";
 
 
 function PagePropsPadrehijo() {
@@ -8,18 +8,19 @@ function PagePropsPadrehijo() {
   const messageObject = "Objeto desde el componente padre";
   const objPerson = {
     name: "Marcelo",
-    lastename: "Cabrera",
+    lastname: "Cabrera",
     age: 42,
   }
 
 
   return (
     <div>
-      <PropsPadrehijo
-        message={message}
+      <PropsPadrehijo 
+        message ={message}
         messageObject={messageObject}
         objPerson={objPerson}
       >
+
       </PropsPadrehijo>
     </div>
   )
