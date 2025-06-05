@@ -10,6 +10,7 @@ import PageUseEffect from "./pages/PageUseEffect";
 import PageMenu from "./pages/PageMenu";
 import PagePropsPadrehijo from "./pages/PagePropsPadrehijo";
 import PagePropsHijoPadre from "./pages/PagePropsHijoPadre";
+import PageFetchapi from "./pages/PageFetchapi";
 
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
 
       <hr/>
       <PageUseEffect/>
+
+      <hr/>
+      <PageFetchapi/>
 
       
     </div>
