@@ -1,3 +1,5 @@
+import MyRoutes from "./routes/Routes"
+
 function App() {
 
   // Evento Independiente y reutilizable:
