@@ -11,6 +11,7 @@ import PageMenu from "./pages/PageMenu";
 import PagePropsPadrehijo from "./pages/PagePropsPadrehijo";
 import PagePropsHijoPadre from "./pages/PagePropsHijoPadre";
 import PageFetchapi from "./pages/PageFetchapi";
+import PageFormularios from "./pages/PageFormularios";
 
 
 function App() {
@@ -52,6 +53,10 @@ function App() {
 
       <hr/>
       <PageFetchapi/>
+
+      <hr/>
+
+      <PageFormularios/>
 
       
     </div>
