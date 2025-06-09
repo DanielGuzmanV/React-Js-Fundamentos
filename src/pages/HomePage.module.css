@@ -1,0 +1,25 @@
+.ulstl {
+  background-color: rgb(186, 217, 197);
+  border-radius: 10px;
+  padding: 20px;
+  list-style-type:  none;
+}
+
+.listItem {
+  margin: 15px;
+}
+
+.menuButton {
+  background-color: #8686ea;
+  color: white;
+  padding: 5px;
+  min-width: 50%;
+  border-radius: 5px;
+  border: 2px solid #aca6a6;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  transform: scale(1.02);
+  background-color: #6462ec;
+}

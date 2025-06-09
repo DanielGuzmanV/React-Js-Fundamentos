@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import styles from './HomePage.module.css';
 
 function HomePage() {
 
@@ -10,69 +11,69 @@ function HomePage() {
   return (
     <div>
 
-      <ul>
-        <li>
-          <button onClick={() => handleRoutes('/menu')}>
+      <ul className={styles.ulstl}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={() => handleRoutes('/menu')}>
             Menu inicio
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/formBasico')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/formBasico')}>
             Formulario basico
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/renderizado')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/renderizado')}>
             Renderizado
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/listas')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/listas')}>
             Renderizado de listas
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/propsPH')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/propsPH')}>
             Props padre a hijo
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/useClass')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/useClass')}>
             ClassName
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/propsHP')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/propsHP')}>
             Props hijo a padre
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/stateUp')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/stateUp')}>
             Comunicacion de componentes
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/useEffect')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/useEffect')}>
             Uso de useEffect
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/fetch')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/fetch')}>
             Uso de API
           </button>
         </li>
 
-        <li>
-          <button onClick={ () => handleRoutes('/formulario')}>
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/formulario')}>
             Formularios react
           </button>
         </li>
