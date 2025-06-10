@@ -28,6 +28,9 @@ function HeaderComponent() {
           <li>
             <Link className='link' to="/linksBlog">Blog</Link>
           </li>
+          <li>
+            <Link className='link' to="/linksSettings">Settings</Link>
+          </li>
         </ul>
 
       </nav>
