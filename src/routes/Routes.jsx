@@ -13,6 +13,7 @@ import PageFetchapi from "../pages/PageFetchapi"
 import PageFormularios from "../pages/PageFormularios"
 import LinksHomePage from "../pages/LinksHomePage"
 import LinksBlogPage from "../pages/LinksBlogPage"
+import PostDetails from "../pages/PostDetails"
 
 function MyRoutes() {
   return (
@@ -30,8 +31,9 @@ function MyRoutes() {
       <Route path="/useEffect" element={<PageUseEffect/>}/>
       <Route path="/fetch" element={<PageFetchapi/>}/>
       <Route path="/formulario" element={<PageFormularios/>}/>
-      <Route path="/linksHome" element={<LinksHomePage/>}/>
       <Route path="/linksBlog" element={<LinksBlogPage/>}/>
+      <Route path="/linksHome" element={<LinksHomePage/>}/>
+      <Route path="/linksHome/:id" element={<PostDetails/>}/>
     </Routes>
 
   )
