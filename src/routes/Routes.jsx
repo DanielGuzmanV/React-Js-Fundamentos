@@ -14,6 +14,8 @@ import PageFormularios from "../pages/PageFormularios"
 import LinksHomePage from "../pages/LinksHomePage"
 import LinksBlogPage from "../pages/LinksBlogPage"
 import PostDetails from "../pages/PostDetails"
+import LinksSettingsPage from "../pages/LinksSettingsPage"
+import ErrorPage from "../pages/ErrorPage"
 
 function MyRoutes() {
   return (
@@ -34,6 +36,10 @@ function MyRoutes() {
       <Route path="/linksBlog" element={<LinksBlogPage/>}/>
       <Route path="/linksHome" element={<LinksHomePage/>}/>
       <Route path="/linksHome/:id" element={<PostDetails/>}/>
+      <Route path="/linksSettings" element={<LinksSettingsPage/>}/>
+
+      <Route path="*" element={<ErrorPage/>}/>
+      
     </Routes>
 
   )
