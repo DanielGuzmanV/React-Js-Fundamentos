@@ -1,20 +1,47 @@
+import { useEffect, useState } from "react"
 import HeaderComponent from "../components/HeaderComponent"
+import PostCard from "../components/PostCard";
 
 function LinksHomePage() {
+  const [posts, setPosts] = useState([]);
+
+  const getPosts = async() => {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+    const data = await response.json();
+    console.log(data);
+
+    setPosts(data);
+  }
+
+  useEffect(() => {
+    getPosts();
+  },[])
+
+  const valuePostCards = posts. map( (valuePost) => {
+    return (
+      <li key={valuePost.id}>
+        <PostCard posts={valuePost}/>
+      </li>
+    )
+  })
+
+
+
+
+  
   return (
     <>
       <HeaderComponent/>
-      <h2 style={{color: 'blue'}}>Home Page Links</h2>
 
-      <h3>Titulo 1</h3>
-      <p>Duis cupidatat magna ut sint anim do tempor duis reprehenderit.</p>
+      <section>
+        <h2 style={{color: 'blue'}}>Home Page Links</h2>
 
-      <h3>Titulo 2</h3>
-      <p>Fugiat irure veniam mollit aliqua pariatur Lorem amet eiusmod irure tempor excepteur sit veniam.</p>
+        <ul>
+          {valuePostCards}
+        </ul>
 
-      <h3>Titulo 3</h3>
-      <p>Consectetur ullamco aliquip voluptate commodo tempor eu consequat excepteur pariatur. Sit id enim irure velit exercitation laborum. Exercitation do pariatur occaecat fugiat.</p>
-    
+      </section>
+
     </>
   )
 }
