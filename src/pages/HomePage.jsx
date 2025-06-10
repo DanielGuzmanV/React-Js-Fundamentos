@@ -78,6 +78,12 @@ function HomePage() {
           </button>
         </li>
 
+        <li className={styles.listItem}>
+          <button className={styles.menuButton} onClick={ () => handleRoutes('/linksHome')}>
+            Links react
+          </button>
+        </li>
+
 
 
       </ul>

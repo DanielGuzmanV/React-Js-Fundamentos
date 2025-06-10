@@ -11,6 +11,8 @@ import PageStateUp from "../pages/PageStateUp"
 import PageUseEffect from "../pages/PageUseEffect"
 import PageFetchapi from "../pages/PageFetchapi"
 import PageFormularios from "../pages/PageFormularios"
+import LinksHomePage from "../pages/LinksHomePage"
+import LinksBlogPage from "../pages/LinksBlogPage"
 
 function MyRoutes() {
   return (
@@ -28,6 +30,8 @@ function MyRoutes() {
       <Route path="/useEffect" element={<PageUseEffect/>}/>
       <Route path="/fetch" element={<PageFetchapi/>}/>
       <Route path="/formulario" element={<PageFormularios/>}/>
+      <Route path="/linksHome" element={<LinksHomePage/>}/>
+      <Route path="/linksBlog" element={<LinksBlogPage/>}/>
     </Routes>
 
   )
