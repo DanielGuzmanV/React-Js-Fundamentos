@@ -1,22 +1,10 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import HeaderComponent from "../components/HeaderComponent"
 import PostCard from "../components/PostCard";
+import { HomeContext } from "../context/home_context";
 
 function LinksHomePage() {
-  const [posts, setPosts] = useState([]);
-  const [valueError, setError] = useState(false);
-
-  const getPosts = async() => {
-    try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/posts');
-      const data = await response.json();
-      console.log(data);
-      setPosts(data);
-      
-    } catch (error) {
-      setError(true);
-    }
-  }
+  const {posts, valueError, getPosts} = useContext(HomeContext)
 
   useEffect(() => {
     getPosts();
