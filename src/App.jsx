@@ -1,6 +1,7 @@
 import MyRoutes from "./routes/Routes"
 import reactLogo from "./assets/react.svg"
 import { useNavigate } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const mainNavigation = useNavigate(); 
@@ -21,6 +22,7 @@ function App() {
         }} src={reactLogo}/>
       </h1>
 
+      <ScrollToTop/>
       <MyRoutes/>
       <hr/>
 
