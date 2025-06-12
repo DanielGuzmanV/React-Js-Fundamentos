@@ -22,6 +22,16 @@ function RegisterSettings() {
   // Iniciar sesion con los datos del formulario:
   const handleLogin = (event) => {
     event.preventDefault();
+
+    if(
+      formUser.nombre.trim() === "" ||
+      formUser.email.trim() === "" ||
+      formUser.rol === "opcion"
+    ) {
+      alert('Por favor completa todos los campos correctamente');
+      return;
+    }
+
     setDataUser({
       nombre: formUser.nombre,
       email: formUser.email,
@@ -40,6 +50,7 @@ function RegisterSettings() {
           <div className="formRow">
             <label htmlFor="username">Nombre</label>
             <input
+              required
               type="text"
               id="username"
               name="nombre"
@@ -52,6 +63,7 @@ function RegisterSettings() {
           <div className="formRow">
             <label htmlFor="email">Correo</label>
             <input
+              required
               className="inputs"
               type="email"
               id="email"
@@ -65,6 +77,7 @@ function RegisterSettings() {
           <div className="formRow">
             <label htmlFor="rol">Rol:</label>
             <select
+              required
               id="rol"
               name="rol"
               value={formUser.rol}
