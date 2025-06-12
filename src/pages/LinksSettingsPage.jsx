@@ -12,7 +12,15 @@ function LinksSettingsPage() {
   return (
     <>
       <HeaderComponent/>
-      <div>Settings Page</div>
+      <div>
+        <h2>Settings</h2>
+        
+        <h3>Nombre: </h3>
+        <span>{user.nombre}</span>
+        <h3>Correo: </h3>
+        <span>{user.email}</span>
+
+      </div>
     </>
   )
 }
