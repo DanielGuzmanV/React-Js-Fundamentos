@@ -6,9 +6,9 @@ function UserProviderWrapper(props) {
   const [user, setDataUser] = useState(null);
 
   const dataUser = {
-    nombre: 'Armando',
-    email: 'armando@example.dev',
-    isAdmin: true,
+    nombre: '',
+    email: '',
+    isAdmin: false,
   }
 
   const loginUser = () => {
