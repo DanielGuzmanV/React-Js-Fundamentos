@@ -24,7 +24,7 @@ function LinksHomePage() {
     <>
       <HeaderComponent/>
       <section>
-        <h2 style={{color: 'blue'}}>Home Page Links</h2>
+        <h2 style={{color: 'red'}} data-testid="homePageTitle">Home Page Links</h2>
 
         <p>Nombre de usuario: {user && <b>{user.nombre}</b>}</p>
 
@@ -32,9 +32,9 @@ function LinksHomePage() {
         <button onClick={() => logoutUser()}> Cerrar sesion </button>
         
         {valueError ? (
-            <h2> Algo salio mal en la peticion... </h2>
+            <h2 data-testid="error-msg"> Algo salio mal en la peticion... </h2>
           ) : !valuePostCards.length ? (
-              <h2> Cargando pagina... </h2>
+              <h2 data-testid="loading-msg"> Cargando pagina... </h2>
           ) : (
             <ul>{valuePostCards}</ul>
           )
