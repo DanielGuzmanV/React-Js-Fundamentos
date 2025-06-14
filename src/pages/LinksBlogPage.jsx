@@ -1,27 +1,33 @@
-import { Link } from "react-router-dom"
+import { useState } from "react"
 import HeaderComponent from "../components/HeaderComponent"
-import { useContext } from "react"
-import { UserContext } from "../context/user_context"
 import RegisterSettings from "../components/RegisterSettings"
 
 function LinksBlogPage() {
+  const [counter, setCounter] = useState(0);
 
   return (
     <>
       <HeaderComponent/>
-      <h2 style={{color: 'blue'}}>Blog page Links</h2>
+      <h2 style={{color: 'red'}} data-testid="homepage-title">Blog page Links</h2>
+
+      <div style={{
+        backgroundColor:'#92b4b9',
+        padding: '1px',
+        borderRadius: '10px'
+      }}>
+        <h2 style={{color:'blue'}}>Counter Buttons</h2>
+
+        <h2>
+          <button style={{margin: '10px'}} onClick={() => setCounter(counter === 0 ? counter :counter - 1)}> - </button>
+          <span data-testid="counter">{counter}</span>
+          <button style={{margin: '10px'}} onClick={() => setCounter(counter + 1)} data-testid="increase-counter"> + </button>
+        </h2>
+
+      </div>
+
 
       <RegisterSettings/>
 
-      <ul>
-        <h3>Lista del blog</h3>
-        <li>
-          <a href="https://www.youtube.com" target="_blank">Ir a youtube</a>
-        </li>
-        <li>
-          <a href="https://www.google.com" target="_blank">Ir a google</a>
-        </li>
-      </ul>
     </>
   )
 }
