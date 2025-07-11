@@ -3,6 +3,8 @@ import { lazy, Suspense } from "react"
 
 import HomePage from "../pages/fundamentos/HomePage";
 import MainReact from "../pages/MainReact";
+import MainEjemplos from "../pages/ejemplos/MainEjemplos";
+import Ejemplo1 from "../pages/ejemplos/ejemplo1/Ejemplo1";
 
 const AtributoReactivo = lazy(() => import("../components/components-fundamentos/AtributoReactivo"));
 const Renderizado = lazy(() => import("../components/components-fundamentos/Renderizado"));
@@ -28,6 +30,8 @@ function MyRoutes() {
       
       <Routes>
         <Route path="/" element={<MainReact/>}/>
+
+        {/* Rutas - Fundamentos: */}
         <Route path="/homePage" element={<HomePage/>}/>
         <Route path="/menu" element={<PageMenu/>}/>
         <Route path="/formBasico" element={<AtributoReactivo/>}/>
@@ -46,6 +50,13 @@ function MyRoutes() {
         <Route path="/linksSettings" element={<LinksSettingsPage/>}/>
 
         <Route path="*" element={<ErrorPage/>}/>
+        {/* ========================================================= */}
+
+        {/* Rutas - Ejemplos: */}
+        <Route path="/mainEjemplo" element={<MainEjemplos/>}/>
+        <Route path="/ejemplo1" element={<Ejemplo1/>}/>
+
+
         
       </Routes>
     </Suspense>
