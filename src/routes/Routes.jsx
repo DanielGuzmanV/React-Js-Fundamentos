@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { lazy, Suspense } from "react"
 
 import HomePage from "../pages/HomePage";
+import MainReact from "../pages/MainReact";
 
 const AtributoReactivo = lazy(() => import("../components/AtributoReactivo"));
 const Renderizado = lazy(() => import("../components/Renderizado"));
@@ -26,7 +27,8 @@ function MyRoutes() {
     <Suspense fallback={<h1>Loading page...</h1>}>
       
       <Routes>
-        <Route path="/" element={<HomePage/>}/>
+        <Route path="/" element={<MainReact/>}/>
+        <Route path="/homePage" element={<HomePage/>}/>
         <Route path="/menu" element={<PageMenu/>}/>
         <Route path="/formBasico" element={<AtributoReactivo/>}/>
         <Route path="/renderizado" element={<Renderizado/>}/>
