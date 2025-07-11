@@ -1,8 +1,13 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import './HeaderComponent.css'
 import { useEffect, useState } from 'react'
 
 function HeaderComponent() {
+  const routerMain = useNavigate();
+  const handleMain = (main) => {
+    routerMain(main);
+  }
+
   const [title, setTitle] = useState('');
   const location = useLocation();
 
@@ -18,7 +23,7 @@ function HeaderComponent() {
 
   return (
     <header className='header'>
-      <h2 className='title'>Bienvenido {title ? title : '!'}</h2>
+      <h2 onClick={() => handleMain('/')} className='title'>Bienvenido {title ? title : '!'}</h2>
       <nav>
 
         <ul className='link-list'>
