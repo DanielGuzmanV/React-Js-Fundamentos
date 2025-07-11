@@ -1,6 +1,6 @@
 import { fireEvent, render } from "@testing-library/react";
 import LinksBlogPage from "./LinksBlogPage";
-import { UserProviderWrapper } from "../context/user_context";
+import { UserProviderWrapper } from "../../context/user_context";
 import { MemoryRouter } from "react-router-dom";
 
 describe("testing-unitarios", () => {

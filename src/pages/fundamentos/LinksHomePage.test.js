@@ -1,7 +1,7 @@
 import { getByTestId, render } from "@testing-library/react"
 import LinksHomePage from "./LinksHomePage";
-import { UserProviderWrapper } from "../context/user_context";
-import { HomeContext, HomeProviderWrapper } from "../context/home_context";
+import { UserProviderWrapper } from "../../context/user_context";
+import { HomeContext, HomeProviderWrapper } from "../../context/home_context";
 import { MemoryRouter } from "react-router-dom";
 
 jest.mock("../components/HeaderComponent.jsx", () => {

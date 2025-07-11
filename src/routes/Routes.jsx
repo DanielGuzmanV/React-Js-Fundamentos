@@ -1,25 +1,25 @@
 import { Route, Routes } from "react-router-dom"
 import { lazy, Suspense } from "react"
 
-import HomePage from "../pages/HomePage";
+import HomePage from "../pages/fundamentos/HomePage";
 import MainReact from "../pages/MainReact";
 
 const AtributoReactivo = lazy(() => import("../components/AtributoReactivo"));
 const Renderizado = lazy(() => import("../components/Renderizado"));
 const Listas = lazy(() => import("../components/Listas"));
 const ClassComponent = lazy(() => import("../components/ClassComponent"));
-const PageMenu = lazy(() => import("../pages/PageMenu"));
-const PagePropsPadrehijo = lazy(() => import("../pages/PagePropsPadrehijo"));
-const PagePropsHijoPadre = lazy(() => import("../pages/PagePropsHijoPadre"));
-const PageStateUp = lazy(() => import("../pages/PageStateUp"));
-const PageUseEffect = lazy(() => import("../pages/PageUseEffect"));
-const PageFetchapi = lazy(() => import("../pages/PageFetchapi"));
-const PageFormularios = lazy(() => import("../pages/PageFormularios"));
-const LinksHomePage = lazy(() => import("../pages/LinksHomePage"));
-const LinksBlogPage = lazy(() => import("../pages/LinksBlogPage"));
-const PostDetails = lazy(() => import("../pages/PostDetails"));
-const LinksSettingsPage = lazy(() => import("../pages/LinksSettingsPage"));
-const ErrorPage = lazy(() => import( "../pages/ErrorPage"));
+const PageMenu = lazy(() => import("../pages/fundamentos/PageMenu"));
+const PagePropsPadrehijo = lazy(() => import("../pages/fundamentos/PagePropsPadrehijo"));
+const PagePropsHijoPadre = lazy(() => import("../pages/fundamentos/PagePropsHijoPadre"));
+const PageStateUp = lazy(() => import("../pages/fundamentos/PageStateUp"));
+const PageUseEffect = lazy(() => import("../pages/fundamentos/PageUseEffect"));
+const PageFetchapi = lazy(() => import("../pages/fundamentos/PageFetchapi"));
+const PageFormularios = lazy(() => import("../pages/fundamentos/PageFormularios"));
+const LinksHomePage = lazy(() => import("../pages/fundamentos/LinksHomePage"));
+const LinksBlogPage = lazy(() => import("../pages/fundamentos/LinksBlogPage"));
+const PostDetails = lazy(() => import("../pages/fundamentos/PostDetails"));
+const LinksSettingsPage = lazy(() => import("../pages/fundamentos/LinksSettingsPage"));
+const ErrorPage = lazy(() => import( "../pages/fundamentos/ErrorPage"));
 
 
 function MyRoutes() {

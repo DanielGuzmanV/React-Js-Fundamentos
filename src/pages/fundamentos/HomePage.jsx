@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import styles from './HomePage.module.css';
-import reactLogo from '../assets/react.svg'
+import reactLogo from '../../assets/react.svg'
 
 function HomePage() {
 
