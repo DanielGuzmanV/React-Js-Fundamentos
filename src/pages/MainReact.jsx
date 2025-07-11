@@ -33,7 +33,7 @@ const MainReact = () => {
           </button>
         </li>
         <li className={styles.liItem}>
-          <button className={styles.menuBtn} onClick={() => handleRoutes('')}>
+          <button className={styles.menuBtn} onClick={() => handleRoutes('/mainEjemplo')}>
             Ejemplos
           </button>
         </li>
