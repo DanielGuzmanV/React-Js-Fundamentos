@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import styles from './HomePage.module.css';
+import reactLogo from '../assets/react.svg'
 
 function HomePage() {
 
@@ -10,6 +11,15 @@ function HomePage() {
 
   return (
     <div>
+
+      <h1 onClick={() => handleRoutes('/')} >
+        Fundamentos React
+        <img style={{
+          width: '50px',
+          padding: '8px'
+        }} src={reactLogo}/>
+      </h1>
+
 
       <ul className={styles.ulstl}>
         <li className={styles.listItem}>
