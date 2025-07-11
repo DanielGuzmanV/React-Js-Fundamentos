@@ -4,10 +4,10 @@ import { lazy, Suspense } from "react"
 import HomePage from "../pages/fundamentos/HomePage";
 import MainReact from "../pages/MainReact";
 
-const AtributoReactivo = lazy(() => import("../components/AtributoReactivo"));
-const Renderizado = lazy(() => import("../components/Renderizado"));
-const Listas = lazy(() => import("../components/Listas"));
-const ClassComponent = lazy(() => import("../components/ClassComponent"));
+const AtributoReactivo = lazy(() => import("../components/components-fundamentos/AtributoReactivo"));
+const Renderizado = lazy(() => import("../components/components-fundamentos/Renderizado"));
+const Listas = lazy(() => import("../components/components-fundamentos/Listas"));
+const ClassComponent = lazy(() => import("../components/components-fundamentos/ClassComponent"));
 const PageMenu = lazy(() => import("../pages/fundamentos/PageMenu"));
 const PagePropsPadrehijo = lazy(() => import("../pages/fundamentos/PagePropsPadrehijo"));
 const PagePropsHijoPadre = lazy(() => import("../pages/fundamentos/PagePropsHijoPadre"));

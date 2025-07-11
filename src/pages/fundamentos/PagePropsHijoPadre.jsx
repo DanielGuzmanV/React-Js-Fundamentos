@@ -1,5 +1,5 @@
 import { useState } from "react"
-import PropsHijopadre from "../components/PropsHijopadre"
+import PropsHijopadre from "../../components/components-fundamentos/PropsHijopadre"
 
 function PagePropsHijoPadre() {
   // Uso props hijo a padre:

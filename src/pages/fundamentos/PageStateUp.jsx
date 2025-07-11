@@ -1,6 +1,6 @@
 import { useState } from "react"
-import StateUpChil1 from "../components/StateUpChil1"
-import StateUpChild2 from "../components/StateUpChild2"
+import StateUpChil1 from "../../components/components-fundamentos/StateUpChil1"
+import StateUpChild2 from "../../components/components-fundamentos/StateUpChild2"
 
 function StateUp() {
   const [displayName, setDisplayName] = useState("");

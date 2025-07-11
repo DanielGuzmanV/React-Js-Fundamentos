@@ -1,7 +1,7 @@
 import { useContext, useState } from "react"
-import HeaderComponent from "../components/HeaderComponent"
+import HeaderComponent from "../../components/components-fundamentos/HeaderComponent"
 import { Navigate } from "react-router-dom";
-import { UserContext } from "../context/user_context";
+import { UserContext } from "../../context/user_context";
 
 function LinksSettingsPage() {
 

@@ -1,5 +1,5 @@
 import MyRoutes from "./routes/Routes"
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/components-fundamentos/ScrollToTop";
 
 function App() {
   return (

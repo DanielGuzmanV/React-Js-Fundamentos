@@ -1,5 +1,5 @@
 import { useState } from "react"
-import ChildUseEffect from "../../components/ChildUseEffect";
+import ChildUseEffect from "../../components/components-fundamentos/ChildUseEffect";
 
 function PageUseEffect() {
   const [showChild, setShowChild] = useState(true);

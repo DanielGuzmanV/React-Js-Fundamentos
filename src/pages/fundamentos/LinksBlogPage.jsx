@@ -1,6 +1,6 @@
 import { useState } from "react"
-import HeaderComponent from "../components/HeaderComponent"
-import RegisterSettings from "../components/RegisterSettings"
+import HeaderComponent from "../../components/components-fundamentos/HeaderComponent"
+import RegisterSettings from "../../components/components-fundamentos/RegisterSettings"
 
 function LinksBlogPage() {
   const [counter, setCounter] = useState(0);

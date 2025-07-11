@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Menu from "../../components/Menu"
+import Menu from "../../components/components-fundamentos/Menu"
 
 function PageMenu() {
   const [number, setNumber] = useState(0);

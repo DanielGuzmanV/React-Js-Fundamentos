@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react"
-import HeaderComponent from "../components/HeaderComponent"
-import PostCard from "../components/PostCard";
-import { HomeContext } from "../context/home_context";
-import { UserContext } from "../context/user_context";
+import HeaderComponent from "../../components/components-fundamentos/HeaderComponent"
+import PostCard from "../../components/components-fundamentos/PostCard";
+import { HomeContext } from "../../context/home_context";
+import { UserContext } from "../../context/user_context";
 
 function LinksHomePage() {
   const {posts, valueError, getPosts} = useContext(HomeContext)

@@ -1,4 +1,4 @@
-import PropsPadrehijo from "../components/PropsPadrehijo";
+import PropsPadrehijo from "../../components/components-fundamentos/PropsPadrehijo";
 
 
 function PagePropsPadrehijo() {
