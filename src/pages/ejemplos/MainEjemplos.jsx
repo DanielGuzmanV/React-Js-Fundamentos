@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom"
+import styles from '../ejemplos/MainEjemplo.module.css';
 
 function MainEjemplos() {
   const routesNav = useNavigate();
@@ -11,17 +12,13 @@ function MainEjemplos() {
 
       <h1 onClick={() => handleRoutes('/')}>Ejemplos de React</h1>
 
-      <ul>
-        <li>
-          <button onClick={() => handleRoutes('/ejemplo1')}>
+      <ul className={styles.valueList}>
+        <li className={styles.valueItem}>
+          <button className={styles.valueBtn} onClick={() => handleRoutes('/ejemplo1')}>
             Ejemplo 1
           </button>
         </li>
-        <li>
-          <button>
-            Ejemplo 2
-          </button>
-        </li>
+        
       </ul>
     </div>
   )
