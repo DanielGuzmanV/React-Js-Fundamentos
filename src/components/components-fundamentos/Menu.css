@@ -1,7 +1,12 @@
-#menu {
-  h2 {
-    background-color: green;
-    color: white;
-  }
+
+.firstComponent {
+  border-radius: 10px;
+  background-color: green;
+  color: white
 }
 
+.contentTitle {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}

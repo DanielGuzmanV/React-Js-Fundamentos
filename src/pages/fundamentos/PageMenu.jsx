@@ -10,12 +10,17 @@ function PageMenu() {
     console.log('El numero actual es: ', number)
   }
 
+  const restartNumber = () => {
+    setNumber(0)
+  }
+
   return (
     <div>
-      <Menu/>
+      {/* Llamamos al primer componente */}
+      <Menu number={number} valueRestart={restartNumber}/>
 
       <h2 onClick={() => {alert('Hola desde el alert con Js')}}>
-        Saludo con un alert
+        Saludar con un alert
       </h2>
 
       <h3>Numero: {number}</h3>
